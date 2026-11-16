@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: >-
+  If you use this code, please cite it as below, together with the papers
+  listed under Citation in the README.
+type: software
+title: "Conditional genetic correlations with Genomic SEM"
+abstract: >-
+  R code and a step-by-step tutorial for estimating conditional genetic
+  correlations with Genomic SEM: the genetic correlation between two traits
+  conditioned on a third, with a significance test for the difference between
+  the marginal and conditional estimate, fitted in both orientations, and a
+  batch workflow for many trait pairs and conditioning traits.
+authors:
+  - family-names: Romero
+    given-names: Cato
+    affiliation: >-
+      Department of Complex Trait Genetics, Center for Neurogenomics and
+      Cognitive Research, Amsterdam Neuroscience, Vrije Universiteit Amsterdam
+version: 1.0.0
+date-released: 2026-11-16
+license: MIT
+repository-code: "https://github.com/cro280/Conditional-Genetic-Correlation"
+keywords:
+  - genetic correlation
+  - conditional genetic correlation
+  - Genomic SEM
+  - LD score regression
+  - GWAS
+  - pleiotropy
+  - comorbidity
