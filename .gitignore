@@ -1,0 +1,8 @@
+ld/
+results/
+*_ldsc.log
+!example_output/*_ldsc.log
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store

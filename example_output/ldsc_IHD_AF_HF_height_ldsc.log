@@ -1,0 +1,123 @@
+Multivariate ld-score regression of 4 traits (example_data/UKB_IHD.sumstats.gz example_data/UKB_AF.sumstats.gz example_data/UKB_HF.sumstats.gz example_data/height.sumstats.gz) began at: 2026-11-16 16:18:18.224023
+Reading in LD scores
+Read in summary statistics [1/4] from: example_data/UKB_IHD.sumstats.gz
+Out of 915858 SNPs, 912041 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 127.353541; 912041 remain
+Read in summary statistics [2/4] from: example_data/UKB_AF.sumstats.gz
+Out of 915796 SNPs, 911979 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 90.085449; 911979 remain
+Read in summary statistics [3/4] from: example_data/UKB_HF.sumstats.gz
+Out of 915911 SNPs, 912094 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 80; 912094 remain
+Read in summary statistics [4/4] from: example_data/height.sumstats.gz
+Out of 902560 SNPs, 899201 remain after merging with LD-score files
+Removing 0 SNPs with Chi^2 > 459.266; 899201 remain
+          
+Estimating heritability [1/10] for: example_data/UKB_IHD.sumstats.gz
+Heritability Results for trait: example_data/UKB_IHD.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.368
+Lambda GC: 1.2931
+Intercept: 1.0499 (0.0124)
+Ratio: 0.1355 (0.0336)
+Total Observed Scale h2: 0.121 (0.008)
+h2 Z: 15.1
+     
+Calculating genetic covariance [2/10] for traits: example_data/UKB_IHD.sumstats.gz and example_data/UKB_AF.sumstats.gz
+911926 SNPs remain after merging example_data/UKB_IHD.sumstats.gz and example_data/UKB_AF.sumstats.gz summary statistics
+Results for genetic covariance between: example_data/UKB_IHD.sumstats.gz and example_data/UKB_AF.sumstats.gz
+Mean Z*Z: 0.2256
+Cross trait Intercept: 0.1366 (0.0065)
+Total Observed Scale Genetic Covariance (g_cov): 0.0405 (0.005)
+g_cov Z: 8.04
+g_cov P-value: 9.0643e-16
+     
+Calculating genetic covariance [3/10] for traits: example_data/UKB_IHD.sumstats.gz and example_data/UKB_HF.sumstats.gz
+912041 SNPs remain after merging example_data/UKB_IHD.sumstats.gz and example_data/UKB_HF.sumstats.gz summary statistics
+Results for genetic covariance between: example_data/UKB_IHD.sumstats.gz and example_data/UKB_HF.sumstats.gz
+Mean Z*Z: 0.1897
+Cross trait Intercept: 0.0845 (0.0062)
+Total Observed Scale Genetic Covariance (g_cov): 0.0818 (0.0073)
+g_cov Z: 11.1
+g_cov P-value: 8.733e-29
+     
+Calculating genetic covariance [4/10] for traits: example_data/UKB_IHD.sumstats.gz and example_data/height.sumstats.gz
+899148 SNPs remain after merging example_data/UKB_IHD.sumstats.gz and example_data/height.sumstats.gz summary statistics
+Results for genetic covariance between: example_data/UKB_IHD.sumstats.gz and example_data/height.sumstats.gz
+Mean Z*Z: -0.1722
+Cross trait Intercept: -0.036 (0.01)
+Total Observed Scale Genetic Covariance (g_cov): -0.0263 (0.0045)
+g_cov Z: -5.81
+g_cov P-value: 6.2488e-09
+          
+Estimating heritability [5/10] for: example_data/UKB_AF.sumstats.gz
+Heritability Results for trait: example_data/UKB_AF.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.3248
+Lambda GC: 1.2102
+Intercept: 1.0298 (0.0127)
+Ratio: 0.0918 (0.039)
+Total Observed Scale h2: 0.1576 (0.013)
+h2 Z: 12.1
+     
+Calculating genetic covariance [6/10] for traits: example_data/UKB_AF.sumstats.gz and example_data/UKB_HF.sumstats.gz
+911979 SNPs remain after merging example_data/UKB_AF.sumstats.gz and example_data/UKB_HF.sumstats.gz summary statistics
+Results for genetic covariance between: example_data/UKB_AF.sumstats.gz and example_data/UKB_HF.sumstats.gz
+Mean Z*Z: 0.1632
+Cross trait Intercept: 0.0797 (0.0055)
+Total Observed Scale Genetic Covariance (g_cov): 0.0783 (0.0091)
+g_cov Z: 8.65
+g_cov P-value: 5.0167e-18
+     
+Calculating genetic covariance [7/10] for traits: example_data/UKB_AF.sumstats.gz and example_data/height.sumstats.gz
+899086 SNPs remain after merging example_data/UKB_AF.sumstats.gz and example_data/height.sumstats.gz summary statistics
+Results for genetic covariance between: example_data/UKB_AF.sumstats.gz and example_data/height.sumstats.gz
+Mean Z*Z: 0.2378
+Cross trait Intercept: 0.0782 (0.012)
+Total Observed Scale Genetic Covariance (g_cov): 0.0394 (0.0059)
+g_cov Z: 6.67
+g_cov P-value: 2.5779e-11
+          
+Estimating heritability [8/10] for: example_data/UKB_HF.sumstats.gz
+Heritability Results for trait: example_data/UKB_HF.sumstats.gz
+Mean Chi^2 across remaining SNPs: 1.0983
+Lambda GC: 1.0987
+Intercept: 1.018 (0.0076)
+Ratio: 0.1829 (0.0771)
+Total Observed Scale h2: 0.1307 (0.0181)
+h2 Z: 7.21
+     
+Calculating genetic covariance [9/10] for traits: example_data/UKB_HF.sumstats.gz and example_data/height.sumstats.gz
+899201 SNPs remain after merging example_data/UKB_HF.sumstats.gz and example_data/height.sumstats.gz summary statistics
+Results for genetic covariance between: example_data/UKB_HF.sumstats.gz and example_data/height.sumstats.gz
+Mean Z*Z: -0.0216
+Cross trait Intercept: -0.011 (0.0093)
+Total Observed Scale Genetic Covariance (g_cov): -0.0027 (0.0078)
+g_cov Z: -0.343
+g_cov P-value: 0.73131
+          
+Estimating heritability [10/10] for: example_data/height.sumstats.gz
+Heritability Results for trait: example_data/height.sumstats.gz
+Mean Chi^2 across remaining SNPs: 4.9038
+Lambda GC: 3.1337
+Intercept: 1.5966 (0.0656)
+Ratio: 0.1528 (0.0168)
+Total Observed Scale h2: 0.3732 (0.014)
+h2 Z: 26.7
+     
+      
+Genetic Correlation Results
+Genetic Correlation between UKB_IHD and UKB_AF: 0.293 (0.0365)
+     
+Genetic Correlation between UKB_IHD and UKB_HF: 0.6503 (0.0584)
+     
+Genetic Correlation between UKB_IHD and height: -0.1235 (0.0213)
+     
+Genetic Correlation between UKB_AF and UKB_HF: 0.5458 (0.0631)
+     
+Genetic Correlation between UKB_AF and height: 0.1626 (0.0244)
+     
+Genetic Correlation between UKB_HF and height: -0.0121 (0.0351)
+     
+     
+LDSC finished running at 2026-11-16 16:18:54.752209
+Running LDSC for all files took 0 minutes and 36 seconds
+     

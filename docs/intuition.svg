@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="610" viewBox="0 0 1100 610" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <clipPath id="inIHD"><circle cx="461" cy="348" r="165"/></clipPath>
+    <clipPath id="inAF"><circle cx="355" cy="230" r="113"/></clipPath>
+  </defs>
+  <rect x="0" y="0" width="1100" height="610" rx="10" fill="#ffffff"/>
+  <circle cx="304" cy="341" r="222" fill="#5b8fd0" fill-opacity="0.75"/>
+  <circle cx="461" cy="348" r="165" fill="#e57f4f" fill-opacity="0.62"/>
+  <circle cx="355" cy="230" r="113" fill="#e8cf5c" fill-opacity="0.55"/>
+  <circle cx="304" cy="341" r="222" fill="none" stroke="#fff" stroke-width="3"/>
+  <circle cx="461" cy="348" r="165" fill="none" stroke="#fff" stroke-width="3"/>
+  <circle cx="355" cy="230" r="113" fill="none" stroke="#fff" stroke-width="3"/>
+  <!-- outline of the part shared by IHD and AF -->
+  <circle cx="355" cy="230" r="113" fill="none" stroke="#222" stroke-width="2.5" stroke-dasharray="7 5" clip-path="url(#inIHD)"/>
+  <circle cx="461" cy="348" r="165" fill="none" stroke="#222" stroke-width="2.5" stroke-dasharray="7 5" clip-path="url(#inAF)"/>
+  <text x="219" y="366" text-anchor="middle" font-size="26" font-weight="bold" fill="#111">HF</text><text x="219" y="396" text-anchor="middle" font-size="22"  fill="#111">44 %</text>
+  <text x="574" y="344" text-anchor="middle" font-size="26" font-weight="bold" fill="#111">IHD</text><text x="574" y="374" text-anchor="middle" font-size="22"  fill="#111">15 %</text>
+  <text x="321" y="202" text-anchor="middle" font-size="22"  fill="#111">9 %</text><text x="389" y="276" text-anchor="middle" font-size="22"  fill="#111">13 %</text><text x="427" y="404" text-anchor="middle" font-size="22"  fill="#111">18 %</text>
+  <text x="444" y="76" text-anchor="middle" font-size="26" font-weight="bold" fill="#111">AF</text>
+  <text x="444" y="102" text-anchor="middle" font-size="20" fill="#111">&lt; 1 %</text>
+  <line x1="435" y1="109" x2="396" y2="131" stroke="#555" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+  <text x="690" y="70" font-size="20" font-weight="bold" fill="#111">IHD–AF conditioned on HF</text>
+  <g font-size="16" fill="#222">
+    <text x="690" y="112">IHD and AF share genetic liability</text>
+    <text x="690" y="134">(marginal r<tspan baseline-shift="sub" font-size="11">g</tspan> = 0.29): the dashed overlap.</text>
+    <text x="690" y="176">Virtually all of that overlap also</text>
+    <text x="690" y="198">influences HF.</text>
+    <text x="690" y="240">Conditional on HF, no IHD–AF</text>
+    <text x="690" y="262">genetic correlation remains</text>
+    <text x="690" y="284">(direct = −0.09, P = 0.34).</text>
+    <text x="690" y="326" font-weight="bold">A significant conditional r<tspan baseline-shift="sub" font-size="11">g</tspan>: the</text>
+    <text x="690" y="348" font-weight="bold">conditioning trait overlaps with the</text>
+    <text x="690" y="370" font-weight="bold">shared genetic liability of the two traits.</text>
+  </g>
+  <g font-size="13" fill="#555">
+    <text x="690" y="520">Loosely adapted from trivariate MiXeR estimates</text>
+    <text x="690" y="538">for the UK Biobank AF, IHD and HF GWAS.</text>
+    <text x="690" y="556">Percentages: proportion of variants influencing</text>
+    <text x="690" y="574">at least one of the three traits.</text>
+  </g>
+</svg>

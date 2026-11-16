@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="hb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563a6"/>
+    </marker>
+    <marker id="ho" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2620a"/>
+    </marker>
+    <marker id="hg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="900" height="330" rx="10" fill="#ffffff"/>
+
+  <!-- Panel 1: marginal -->
+  <text x="140" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">1. Marginal</text>
+  <circle cx="60" cy="190" r="28" fill="#eef3f9" stroke="#2563a6" stroke-width="2"/>
+  <text x="60" y="196" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">B</text>
+  <circle cx="220" cy="190" r="28" fill="#eef3f9" stroke="#2563a6" stroke-width="2"/>
+  <text x="220" y="196" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">A</text>
+  <line x1="92" y1="190" x2="188" y2="190" stroke="#2563a6" stroke-width="3" marker-start="url(#hb)" marker-end="url(#hb)"/>
+  <text x="140" y="176" text-anchor="middle" font-size="14" fill="#2563a6">r<tspan baseline-shift="sub" font-size="10">g</tspan>(A,B)</text>
+  <text x="140" y="250" text-anchor="middle" font-size="13" fill="#444">genetic correlation</text>
+  <text x="140" y="268" text-anchor="middle" font-size="13" fill="#444">from LDSC</text>
+
+  <line x1="290" y1="60" x2="290" y2="300" stroke="#ddd" stroke-width="1.5"/>
+
+  <!-- Panel 2: conditional -->
+  <text x="450" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">2. Conditional on C</text>
+  <circle cx="450" cy="90" r="28" fill="#fdf1e6" stroke="#c2620a" stroke-width="2"/>
+  <text x="450" y="96" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">C</text>
+  <circle cx="365" cy="230" r="28" fill="#eef3f9" stroke="#2563a6" stroke-width="2"/>
+  <text x="365" y="236" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">B</text>
+  <circle cx="535" cy="230" r="28" fill="#eef3f9" stroke="#2563a6" stroke-width="2"/>
+  <text x="535" y="236" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">A</text>
+  <line x1="381" y1="203" x2="433" y2="117" stroke="#c2620a" stroke-width="3" marker-start="url(#ho)" marker-end="url(#ho)"/>
+  <line x1="467" y1="117" x2="519" y2="203" stroke="#c2620a" stroke-width="3" marker-start="url(#ho)" marker-end="url(#ho)"/>
+  <line x1="397" y1="230" x2="503" y2="230" stroke="#2563a6" stroke-width="3" marker-start="url(#hb)" marker-end="url(#hb)"/>
+  <text x="450" y="256" text-anchor="middle" font-size="14" fill="#2563a6">direct</text>
+  <text x="450" y="273" text-anchor="middle" font-size="12" fill="#2563a6">(conditional r<tspan baseline-shift="sub" font-size="9">g</tspan>)</text>
+  <text x="378" y="150" text-anchor="end" font-size="13" fill="#c2620a">shared</text>
+  <text x="378" y="166" text-anchor="end" font-size="13" fill="#c2620a">with C</text>
+  <text x="522" y="150" font-size="13" fill="#c2620a">shared</text>
+  <text x="522" y="166" font-size="13" fill="#c2620a">with C</text>
+  <text x="450" y="304" text-anchor="middle" font-size="13" fill="#222">indirect = marginal − direct</text>
+
+  <line x1="610" y1="60" x2="610" y2="300" stroke="#ddd" stroke-width="1.5"/>
+
+  <!-- Panel 3: two orientations -->
+  <text x="755" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">3. Both orientations</text>
+  <text x="630" y="84" font-size="13" fill="#444">A_on_B</text>
+  <text x="630" y="104" font-size="14" font-family="Menlo, Consolas, monospace" fill="#222">A ~ B + C</text>
+  <text x="630" y="122" font-size="14" font-family="Menlo, Consolas, monospace" fill="#222">C ~ B</text>
+  <text x="630" y="160" font-size="13" fill="#444">B_on_A</text>
+  <text x="630" y="180" font-size="14" font-family="Menlo, Consolas, monospace" fill="#222">B ~ A + C</text>
+  <text x="630" y="198" font-size="14" font-family="Menlo, Consolas, monospace" fill="#222">C ~ A</text>
+  <text x="630" y="236" font-size="13" fill="#222">direction A–B unknown:</text>
+  <text x="630" y="254" font-size="13" fill="#222">C must be significant in both;</text>
+  <text x="630" y="272" font-size="13" fill="#222">report the smaller indirect</text>
+  <text x="630" y="290" font-size="13" fill="#222">effect (conservative)</text>
+</svg>
